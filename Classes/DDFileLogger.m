@@ -965,7 +965,6 @@ unsigned long long const kDDDefaultLogFilesDiskQuota   = 20 * 1024 * 1024; // 20
 
             dispatch_source_set_event_handler(_currentLogFileVnode, ^{ @autoreleasepool {
                                                                           NSLogInfo(@"DDFileLogger: Current logfile was moved. Rolling it and creating a new one");
-                                                                          [self rollLogFileNow];
                                                                       } });
 
             #if !OS_OBJECT_USE_OBJC
